@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulbe</title>
+    <style>
+    #Bulbe {
+        width: 400px;
+        height: 450px;
+        margin: auto;
+        
+    }
+    #Bulbe img {
+        width: 350px;
+        height: 350px; 
+    }
+    </style>
+    <script>
+        function clickMe(state) {
+            
+            if(state == 'ON'){
+                // true cindition
+                document.body.style.backgroundColor='yellow';
+                document.getElementById('myimg').setAttribute('src','/bulbeon.jpg');
+
+
+
+            }else{
+                //filse conditino
+                document.body.style.backgroundColor='black';
+                document.getElementById('myimg').setAttribute('src','/bulbeoff.jpg');
+
+            }
+
+
+        };
+    </script>
+</head>
+<body>
+    <div id="Bulbe">
+    <img id="myimg" src="/bulbeoff.jpg" alt=""></div><br>
+    <button onclick="clickMe('ON')">ON</button>
+    <button onclick="clickMe('OFF')">OFF</button>
+    </div>
+</body>
+</html>
